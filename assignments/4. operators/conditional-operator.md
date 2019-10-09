@@ -9,6 +9,33 @@
     * [ ] Mul
     * [ ] Div
 
+//code
+let number1 = +prompt("Enter First Number") ;
+let number2 = +prompt("Enter Second Number") ;
+let operation = prompt("Add/Sub/Mul/Div") ;
+if (operation == "Add"){
+  alert(number1 + number2);
+}
+else if  (operation == "Sub" && number1>=number2){
+  alert(number1 - number2);
+}
+else if  (operation == "Sub" && number1<number2){
+  alert(`Number Two is larger than Number one`);
+}
+else if  (operation == "Mul"){
+  alert(number1 * number2);
+}
+
+else if (operation == "Div"  && number1>=number2){
+  alert(number1/number2);
+}
+else if  (operation == "Div" && number1<number2){
+  alert(`Number Two is larger than Number one`);
+}
+else {
+  alert("try again with correct operators");
+}
+
 2. 🎖Write a if else statement which checks if the status is single `console.log` the message `John is single` or else `John is married`
 ```js
 var firstName = 'John';
