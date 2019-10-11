@@ -57,10 +57,10 @@ let temperature = 4;
 // Your code goes here
 temperature < 32 && alert("It is freezing outside") ;
 temperature > 110 || alert("It is hot outside") ;
-temperature > 32 || temperature < 110 && alert('Go for it. It is pretty nice out')
+temperature > 32 || (temperature < 110 && alert('Go for it. It is pretty nice out'))
 ```
 
 4. 🎖 Output of this and the reason behind the output.
 ```js
 alert( alert(1) || 2 || alert(3) ); // first it will alert "1" and then it will alert 2
-```
+``` 
