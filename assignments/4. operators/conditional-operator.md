@@ -9,22 +9,73 @@
     * [ ] Mul
     * [ ] Div
 
+//code
+let number1 = +prompt("Enter First Number") ;
+let number2 = +prompt("Enter Second Number") ;
+let operation = prompt("Add/Sub/Mul/Div") ;
+if (operation == "Add"){
+  alert(number1 + number2);
+}
+else if  (operation == "Sub" && number1>=number2){
+  alert(number1 - number2);
+}
+else if  (operation == "Sub" && number1<number2){
+  alert(`Number Two is larger than Number one`);
+}
+else if  (operation == "Mul"){
+  alert(number1 * number2);
+}
+
+else if (operation == "Div"  && number1>=number2){
+  alert(number1/number2);
+}
+else if  (operation == "Div" && number1<number2){
+  alert(`Number Two is larger than Number one`);
+}
+else {
+  alert("try again with correct operators");
+}
+
 2. 🎖Write a if else statement which checks if the status is single `console.log` the message `John is single` or else `John is married`
 ```js
 var firstName = 'John';
 var status = 'single';
 // Your code goes here
+if (status == "single"){
+  console.log (`${firstName} is ${status}`)
+}
+else {
+  console.log(`John is married`)
+}
 ```
 
 3. 🎖Write a JavaScript program that takes two `integers` from user (using prompt) and alerts the larger number.
 ```js
 // your code goes here
+var int1 = +prompt("Enter first interger");
+var int2 = +prompt("Enter second interger");
+if (int1 > int2){
+  alert(int1);
+}
+else {
+  alert(int2);
+}
+
 ```
 
 4. 🎖Write a JavaScript conditional statement to find the sign (+, -) of product of three numbers. Take those three numbers from user using `prompt`. Display an alert box with the specified sign.
 
 ```js
 // Your code goes here
+let num1 = +prompt("enter first integer");
+let num2 = +prompt("enter second integer");
+let num3 = +prompt("enter third integer");
+product = (num1*num2*num3);
+if (product>0){
+alert (`${product} is positive(+)`);
+} else {
+	alert(`${product} is negative(-)`);
+}
 ```
 
 ## Switch Statement
@@ -44,6 +95,38 @@ Take a number value from user and alert the message if it matches the conditions
 * [ ] PLEASE TRY AGAIN, if  is none of the above.
 ```js
 // Your code goes here
+let number_ = +prompt('value?');
+switch(number_) {
+  case 1:
+  alert('ONE');
+  break;
+  case 2:
+  alert('TWO');
+  break;
+  case 3:
+  alert('THREE');
+  break;
+  case 4:
+  alert('FOUR');
+  break;
+  case 5:
+  alert('FIVE');
+  break;
+  case 6:
+  alert('SIX');
+  break;
+  case 7:
+  alert('SEVEN');
+  break;
+  case 8:
+  alert('EIGHT');
+  break;
+  case 9:
+  alert('NINE');
+  break;
+  default : alert('PLEASE TRY AGAIN, if  is none of the above.');
+  break;
+}
 ```
 
 2. 🎖Using switch statement do the following
